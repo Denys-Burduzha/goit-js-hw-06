@@ -15,10 +15,7 @@ const images = [
 
 
 
-// const image = document.createElement("img");
-// image.url = 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-// image.alt = 'White and Black Long Fur Cat',
-// console.log(image);
+
 
 
 const galleryEl = document.querySelector('.gallery');
@@ -32,7 +29,6 @@ console.log(markup);
 
 galleryEl.insertAdjacentHTML('beforeend', markup)
 
-// gallery.style.flexbox
 
 galleryEl.style.display = 'flex-box';
 
