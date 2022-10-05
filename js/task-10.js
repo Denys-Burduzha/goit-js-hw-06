@@ -1,3 +1,5 @@
+
+
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
@@ -21,6 +23,8 @@ let baseboxSize = 30;
 
 const randomColor = getRandomHexColor
 
+const newArray = [];
+
 const createbox = () => {
   let countBox = Number(input.getAttribute("count"));
   console.log(countBox);
@@ -33,10 +37,12 @@ const createbox = () => {
     newBox.style.margin = "10px";
     newBox.classList.add("new-box");
     boxes.append(newBox);
-  }
+    newArray.push(createbox);
+  };
 };
 
 createboxBtn.addEventListener("click", createbox);
+
 
 const deletebox = () => {
 
@@ -57,9 +63,4 @@ console.log(deleteboxBtn);
 console.log(boxes);
 console.log(baseboxSize);
 console.log(deleteboxBtn);
-
-
-
-
-
-
+console.log(newArray);
