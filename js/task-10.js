@@ -36,10 +36,12 @@ const createbox = () => {
     newBox.style.width = baseboxSize + "px";
     newBox.style.margin = "10px";
     newBox.classList.add("new-box");
-    boxes.append(newBox);
-    newArray.push(createbox);
+    newArray.push(newBox);
   };
+    boxes.append(...newArray);
 };
+
+
 
 createboxBtn.addEventListener("click", createbox);
 
